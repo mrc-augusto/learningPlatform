@@ -2,17 +2,196 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
 }
 
 :root{
   --title: #B52184;
   --text: #312D64;
   --white: #fff;
-  --bg: linear-gradient(96deg, #343193, #302C63)
+  --bg: linear-gradient(96deg, #343193, #302C63);
 
   font-size: 62.5%;
+
 }
 
 body{
+  width: 100vw;
   font-size: 1.6rem;
 }
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo{
+  width: 36.4rem;
+  margin-bottom: 2rem;
+}
+
+header h1{
+  color: var(--title);
+
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+header p{
+  margin-bottom: 3.2rem;
+
+  color: var(--text);
+
+  font-size: 2rem;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+main{
+  margin-top: 9.3rem;
+}
+
+main .container{
+  padding: 5rem 3rem;
+  background: var(--bg);
+
+}
+
+main .card-container{
+  padding: 2.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+
+  background: var(--white);
+
+  border-radius: 2rem;
+
+  box-shadow: 0px 3.311px 13.243px 0px rgba(0, 0, 0, 0.25);;
+}
+
+.card-container + .card-container{
+  margin-top: 5rem;
+}
+
+.card-container img{
+  width: 8rem;
+}
+
+.card-container h3{
+  color: var(--title);
+
+  margin-bottom: 2rem;
+
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.card-container p{
+  color: var(--text);
+
+  font-weight: 600;
+}
+
+form{
+  padding: 7.8rem 4.3rem 6.5rem;
+  background: --white;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+form p{
+  color: var(--title);
+
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+form .input-wrapper{
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+
+  transition: .3s ease-in-out;
+}
+
+.input-wrapper input,
+form textarea{
+  border: 1px solid var(--text);
+  border-radius: 1.6rem;
+
+  outline: none;
+}
+
+.input-wrapper input{
+  padding: 1.2rem 1.4rem;
+}
+
+.input-wrapper label{
+  position: absolute;
+  top: 30%;
+  left: 10px;
+
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.6rem;
+}
+
+.input-wrapper input ~ focus,
+.input-wrapper input ~ valid{
+  font-size: 1.2rem;
+  transform: translateY(-30px);
+}
+
+form textarea{
+  height: 10rem;
+  padding: 1.2rem 1.6rem;
+
+  color: var(--text);
+
+  resize: none;
+}
+
+form textarea::placeholder{
+  font-weight: 600;
+  color: var(--text);
+}
+
+form button{
+  width: 15.1rem;
+  padding: 1.6rem;
+
+  background: var(--bg);
+
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+
+  text-align: center;
+
+  border: none;
+  border-radius: 1.6rem;
+
+  cursor: pointer;
+}
+
+footer{
+  padding: 1.6rem;
+  
+  text-align: center;
+  
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 600;
+
+  background: var(--bg);
+}
+
