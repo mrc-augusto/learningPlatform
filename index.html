@@ -13,69 +13,80 @@
 </head>
 <body>
 
-  <header>
-    <img  class="logo" src="assets/astronaut.svg" alt="astronauta">
-    <div class="text">
-      <h1>Explore sem limites</h1>
-      <p>Porque o aprendizado é contínuo</p>
-    </div>
-    <img src="assets/arrow-down.svg" alt="">
-  </header>
+  <div class="app">
+    <header>
+      <img  class="logo" src="assets/astronaut.svg" alt="astronauta">
+      <div class="content">
+        <div class="text">
+          <h1>Explore sem limites</h1>
+          <p>Porque o aprendizado é contínuo</p>
+        </div>
+        <img src="assets/arrow-down.svg" alt="">
+      </div>
+    </header>
 
-  <main>
-    <div class="container">
-      <div class="card-container">
-        <img src="assets/yellow-planet.svg" alt="planeta amarelo">
-        <div>
-          <h3>Não pare nunca</h3>
-          <p>
-            Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.
-          </p>
+    <main>
+      <div class="container">
+        <div class="card-container">
+          <img src="assets/yellow-planet.svg" alt="planeta amarelo">
+          <div>
+            <h3>Não pare nunca</h3>
+            <p>
+              Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.
+            </p>
+          </div>
+        </div>
+        <div class="card-container">
+          <img src="assets/blue-planet.svg" alt="planeta amarelo">
+          <div>
+            <h3>Só volta</h3>
+            <p>
+              Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.
+            </p>
+          </div>
+        </div>
+        <div class="card-container">
+          <img src="assets/pink-planet.svg" alt="planeta amarelo">
+          <div>
+            <h3>Siga seu ritmo</h3>
+            <p>
+              Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="card-container">
-        <img src="assets/blue-planet.svg" alt="planeta amarelo">
-        <div>
-          <h3>Só volta</h3>
-          <p>
-            Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.
-          </p>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="assets/pink-planet.svg" alt="planeta amarelo">
-        <div>
-          <h3>Siga seu ritmo</h3>
-          <p>
-            Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.
-          </p>
-        </div>
-      </div>
-    </div>
 
-    <form>
-      <p>Entre em contato</p>
-      <div class="input-wrapper">
-        <input type="text">
-        <label for="">
-          ícone
-          Seu nome
-        </label>
-      </div>
-      <div class="input-wrapper">
-        <input type="email">
-        <label for="">
-          ícone
-          Email
-        </label>
-      </div>
-      <textarea placeholder="Digite sua mensagem aqu..." ></textarea>
-      <button>Enviar Mensagem</button>
-    </form>
-  </main>
+      <form>
+        <div class="desktop">
+          <p>Entre em contato</p>
+          <div class="input-box">
+            <div class="input-wrapper">
+              <input type="text">
+              <label for="">
+                <img src="assets/user-icon.svg" alt="">
+                Seu nome
+              </label>
+            </div>
+            <div class="input-wrapper">
+              <input type="email">
+              <label for="">
+                <img src="assets/email-icon.svg" alt="">
+                Email
+              </label>
+            </div>
+          </div>
+          <textarea placeholder="Digite sua mensagem aqu..." ></textarea>
+          <button type="submit">Enviar Mensagem</button>
+        </div>
+        <div class="form-bg">
+          <img src="assets/bg-desktop.svg" alt="">
+        </div>
+      </form>
+    </main>
 
-  <footer>
-    <p>&copy - Rocketseat Explorer</p>
-  </footer>
+    <footer>
+      <p>&copy - Rocketseat Explorer</p>
+    </footer>
+  </div>  
 </body>
 </html>
